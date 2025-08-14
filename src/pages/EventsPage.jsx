@@ -80,7 +80,7 @@ export const EventsPage = () => {
           width="200px"
         >
           {uniqueCategories.map((cat) => (
-            <option key={cat.id} value={String(cat.id)}>
+            <option key={cat.id} value={cat.id}>
               {cat.name}
             </option>
           ))}

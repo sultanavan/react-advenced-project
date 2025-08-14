@@ -5,7 +5,7 @@ const EventCard = ({ event, categories }) => {
   const navigate = useNavigate();
 
   const categoryNames = event.categoryIds.map((catId) => {
-    const category = categories.find((c) => c.id === String(catId));
+    const category = categories.find((c) => c.id === catId);
     return {
       id: catId,
       name: category ? category.name : "Unknown",

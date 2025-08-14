@@ -110,7 +110,7 @@ export const EventPage = () => {
       </Text>
       <Box mt={2}>
         {(event.categoryIds || []).map((catId) => {
-          const cat = categories.find((c) => String(c.id) === String(catId));
+          const cat = categories.find((c) => c.id === catId);
           return (
             <Badge key={catId} mr={2}>
               {cat ? cat.name : "Unknown"}

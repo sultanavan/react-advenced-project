@@ -135,20 +135,44 @@
       "location": "Downtown Bowling Alley",
       "startTime": "2023-03-19T18:00:00.000Z",
       "endTime": "2023-03-19T21:00:00.000Z"
+    },
+    {
+      "id": "667c",
+      "title": "tangonognat",
+      "description": "xczxzxc\nzxczx\nxzxczx\nzxc\nzxc\n",
+      "image": "https://picsum.photos/200/300",
+      "startTime": "2025-08-14T21:29",
+      "endTime": "2025-08-16T21:29",
+      "categoryIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "af0b",
+      "title": "New event name",
+      "description": "asasdas\nasdasd\naasdasd 1",
+      "image": "https://picsum.photos/200/300",
+      "startTime": "2025-08-15T21:31",
+      "endTime": "2025-08-30T21:31",
+      "categoryIds": [
+        3
+      ]
     }
   ],
   "categories": [
     {
       "name": "sports",
-      "id": "1"
+      "id": 1
     },
     {
       "name": "games",
-      "id": "2"
+      "id": 2
     },
     {
       "name": "relaxation",
-      "id": "3"
+      "id": 3
     }
   ]
 }

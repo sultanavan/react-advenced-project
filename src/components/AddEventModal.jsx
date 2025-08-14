@@ -103,11 +103,13 @@ const AddEventModal = ({ onEventAdded, categories }) => {
               <FormLabel>Categories</FormLabel>
               <CheckboxGroup
                 value={form.categoryIds}
-                onChange={(values) => setForm({ ...form, categoryIds: values })}
+                onChange={(values) =>
+                  setForm({ ...form, categoryIds: values.map(Number) })
+                }
               >
                 <Stack spacing={2}>
                   {categories.map((cat) => (
-                    <Checkbox key={cat.id} value={String(cat.id)}>
+                    <Checkbox key={cat.id} value={cat.id}>
                       {cat.name}
                     </Checkbox>
                   ))}

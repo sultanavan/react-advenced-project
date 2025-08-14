@@ -1,5 +1,11 @@
 start backend:
 
 ```
-json-server events.json
+json-server data/events.json
+```
+
+start frontend:
+
+```
+jnpm run dev
 ```

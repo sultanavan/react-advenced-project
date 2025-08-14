@@ -1,9 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-// Create context
 const AppContext = createContext();
 
-// Custom hook for easy usage
 export const useAppContext = () => {
   const context = useContext(AppContext);
   if (!context) {
@@ -12,7 +10,6 @@ export const useAppContext = () => {
   return context;
 };
 
-// Provider component
 export const AppProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -39,8 +36,6 @@ export const AppProvider = ({ children }) => {
 
     fetchData();
   }, []);
-
-  // Optionally handle loading state or errors here
 
   return (
     <AppContext.Provider value={{ users, categories, loading }}>
